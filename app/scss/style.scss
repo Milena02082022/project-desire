@@ -4,6 +4,7 @@
 @import 'libs';
 @import 'global';
 
+/*-------------Header---*/
 .header {
 	&__inner {
 		display: flex;
@@ -42,5 +43,140 @@
 	margin: 0 auto;
 }
 
+/*--------Footer-------------------*/
+.footer {
+	&__content {
+		background:$background__1;
+		padding: 61px 80px;
+		
+	}
+	&__copyright {
+		padding: 42px 41px;
+		background: $background__2;
+		color: #A1A1A1;
+		text-align: center;
+		font-family: 'Open Sans';
+		line-height: 28px;
+	}
+}
 
+.footer {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		width: 539px;
+	}
+
+	&__info-title {
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 23px;
+		color: #363838;
+	}
+
+	// .footer__info-text
+
+	&__info-text {
+		padding: 14px 0px 16px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 27px;
+		color: #5A5A5A;
+	}
+
+	// .footer__info-email
+
+	&__info-email {
+		display: flex;
+		font-family: 'Open Sans';
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 28px;
+		color: #363838;
+	}
+
+	// .footer__form
+
+	&__form {
+		padding-top: 22px;
+		background: transparent;
+	}
+
+	// .footer__form-input
+
+	&__form-input {
+		width: 368px;
+		padding: 6px 10px 6px 18px;
+		opacity: 0.7;
+		border: 1px solid #383636;
+		border-radius: 21px;	
+	}
+
+	// .footer__form-button
+
+	&__form-button {
+		width: 160px;
+		padding: 6px 12px 6px 12px;
+		background: #363838;
+		color: #FFFFF0;
+		border-radius: 21px;
+		border: none;
+		cursor: pointer;
+	}
+
+	// .footer__social
+
+	&__social {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .footer__social-item
+
+	&__social-item {
+		display: flex;
+	}
+
+	// .footer__social-link
+
+	&__social-link {
+		font-family: 'Open Sans';
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 28px;
+		color: #707070;
+	}
+
+	// .footer__menu
+
+	&__menu {
+	}
+
+	// .footer__menu-list
+
+	&__menu-list {
+	}
+
+	// .footer__menu-item
+
+	&__menu-item {
+	}
+
+	// .footer__menu-link
+
+	&__menu-link {
+		font-family: 'Open Sans';
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 28px;
+		color: #707070;
+	}
+}
 
