@@ -120,7 +120,6 @@
 			color: #A1A1A1;
 		}
 	}
-
 	&__form-button {
 		min-width: 160px;
 		text-align: center;
@@ -132,9 +131,6 @@
 		margin-left: 9px;
 		cursor: pointer;
 	}
-}
-
-.footer{
 	&__social{
 		width: 125px;
 		margin-right: auto;
@@ -188,12 +184,159 @@
 	&__social-link, &__menu-link{
 		color: #707070;
 	}
-}
-.footer {
-	// .footer__menu
 	&__menu {
 		margin-right: 60px;
 		width: 125px;
+	}
+}
+
+
+/*-----------Секція New collections----------------------*/
+.new-collection {
+	text-align: center;
+	padding: 45px 0px 105px;
+	// .new-collection__title
+	&__title {
+		@extend %title-font;
+		color:#363838;
+		font-size: 36px;
+		line-height: 51px;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		position: relative;
+		&::after{
+			content:'';
+			position: absolute;
+			width:250px;
+			height: 1px;
+			bottom: 0;
+			left:0;
+			right: 0;
+			margin: 0 auto;
+			background: #6d7278;
+		}
+	}
+	// .new-collection__text
+	&__text {
+		max-width: 730px;
+		margin: 0 auto 30px;
+		color: #5A5A5A;
+	}
+}
+.container-fluid{
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+.collection {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-gap: 30px;
+	// .collection__item
+
+	&__item {
+		position: relative;
+	}
+	// .collection__images
+	&__images {
+		min-height: 350px;
+		object-fit: cover;
+	}
+	// .collection__info
+	&__info {
+		position: absolute;
+		top:0;
+		left:0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(#fff, .7);
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	// .collection__info-title
+	&__info-title {
+		@extend %title-font;
+		font-size: 20px;
+		line-height: 25px;
+		padding-bottom: 19px;
+		margin-bottom: 19px;
+		position: relative;
+		color:#363838;
+		&::after{
+			content:'';
+			position: absolute;
+			width:200px;
+			height: 1px;
+			bottom: 0;
+			left:0;
+			right: 0;
+			margin: 0 auto;
+			background: #6d7278;
+		}
+
+	}
+	// .collection__info-text
+	&__info-text {
+		color: #707070;
+	}
+}
+
+
+/*-----------Секція Top----------------------*/
+.top {
+	// .top__inner
+	&__inner {
+		padding-bottom: 70px;
+		position: relative;
+	}
+
+	// .top__slider
+
+	&__slider {
+	}
+
+	// .top__slider-item
+
+	&__slider-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .top__slider-info
+	&__slider-info {
+	}
+
+	// .top__slider-title
+
+	&__slider-title {
+		
+		@extend %title-font;
+		font-size: 110px;
+		line-height: 134px;
+		position: relative;
+		&::after{
+			content:'';
+			position: absolute;
+			width: 185px;
+			height: 1px;
+			bottom: 0;
+			left:0;
+			right: 0;
+			margin: 0 auto;
+			background: #6d7278;
+			margin-top: 26px;
+		}
+	}
+
+	// .top__slider-text
+
+	&__slider-text {
+		max-width: 586px;
+		margin-top: 26px;
+		color: #5A5A5A;
 	}
 }
 
